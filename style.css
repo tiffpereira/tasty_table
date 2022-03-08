@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Satisfy', cursive;
+    background-color: rgba(241, 187, 210, 0.637);
+    font-size: 50px;
+}
+
+#search-input {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    width: 250px;
+}
+
+/* #search {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+#random {
+    display: inline-block;
+    margin-right: 20px;
+    
+} */
+
+.buttons {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+
+}
+.recipe-list {
+    font-family: 'PT Serif', serif;
+    background-color: bisque;
+}

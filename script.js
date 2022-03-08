@@ -3,7 +3,7 @@ const searchInput = document.querySelector('#search-input')
 const randomButton = document.querySelector('#random')
 const recipeList = document.querySelector('.Recipe-list')
 
-//Button 1 
+//Button 1 - Searched Meals 
 button.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`)
@@ -20,13 +20,13 @@ button.addEventListener("click", async () => {
         recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
         //Intructions 
-        const recipeInstructions = document.createElement('div')
+        const recipeInstructions = document.createElement('p')
         recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions) 
     })
 })
 
-//Button 2
+//Button 2 - Random Meals 
 randomButton.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https:www.themealdb.com/api/json/v1/1/random.php`)
@@ -43,7 +43,7 @@ randomButton.addEventListener("click", async () => {
         recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
         //Intructions 
-        const recipeInstructions = document.createElement('div')
+        const recipeInstructions = document.createElement('p')
         recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions)
     })
