@@ -8,8 +8,6 @@ button.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`)
 
-    // console.log(response)
-
     const renderList = response.data.meals 
 
     renderList.forEach((recipe) => {
@@ -33,8 +31,21 @@ randomButton.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https:www.themealdb.com/api/json/v1/1/random.php`)
 
-    console.log(response)
-
     const renderList = response.data.meals
+
+    renderList.forEach((recipe) => {
+        //Title
+        const recipeOutput = document.createElement('ul')
+        recipeOutput.innerHTML = `${recipe.strMeal}`
+        recipeList.append(recipeOutput)
+        //Photo 
+        const recipePhoto = document.createElement('div')
+        recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
+        recipeList.append(recipePhoto)
+        //Intructions 
+        const recipeInstructions = document.createElement('div')
+        recipeInstructions.innerHTML = `${recipe.strInstructions}`
+        recipeList.append(recipeInstructions)
+    })
 })
 
