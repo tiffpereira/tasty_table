@@ -19,9 +19,13 @@ button.addEventListener("click", async () => {
         const recipePhoto = document.createElement('div')
         recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
+        //Intructions title 
+        const recipeInstructionsTitle = document.createElement('h4')
+        recipeInstructionsTitle.innerHTML = `Instructions`
+        recipeList.append(recipeInstructionsTitle)
         //Intructions 
         const recipeInstructions = document.createElement('p')
-        recipeInstructions.innerHTML = `Instructions: ${recipe.strInstructions}`
+        recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions) 
     })
 })
@@ -43,9 +47,13 @@ randomButton.addEventListener("click", async () => {
         const recipePhoto = document.createElement('div')
         recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
-        //Intructions 
+        //Intructions title 
+        const recipeInstructionsTitle = document.createElement('h4')
+        recipeInstructionsTitle.innerHTML = `Instructions`
+        recipeList.append(recipeInstructionsTitle)
+        //Instructions
         const recipeInstructions = document.createElement('p')
-        recipeInstructions.innerHTML = `Instructions: ${recipe.strInstructions}`
+        recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions)
     })
 })
