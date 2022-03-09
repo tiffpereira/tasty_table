@@ -12,7 +12,7 @@ button.addEventListener("click", async () => {
 
     renderList.forEach((recipe) => {
         //Title
-        const recipeOutput = document.createElement('ul')
+        const recipeOutput = document.createElement('h3')
         recipeOutput.innerHTML = `${recipe.strMeal}`
         recipeList.append(recipeOutput)
         //Photo 
@@ -21,7 +21,7 @@ button.addEventListener("click", async () => {
         recipeList.append(recipePhoto)
         //Intructions 
         const recipeInstructions = document.createElement('p')
-        recipeInstructions.innerHTML = `${recipe.strInstructions}`
+        recipeInstructions.innerHTML = `Instructions: ${recipe.strInstructions}`
         recipeList.append(recipeInstructions) 
     })
 })
@@ -35,7 +35,7 @@ randomButton.addEventListener("click", async () => {
 
     renderList.forEach((recipe) => {
         //Title
-        const recipeOutput = document.createElement('ul')
+        const recipeOutput = document.createElement('h3')
         recipeOutput.innerHTML = `${recipe.strMeal}`
         recipeList.append(recipeOutput)
         //Photo 
@@ -44,7 +44,7 @@ randomButton.addEventListener("click", async () => {
         recipeList.append(recipePhoto)
         //Intructions 
         const recipeInstructions = document.createElement('p')
-        recipeInstructions.innerHTML = `${recipe.strInstructions}`
+        recipeInstructions.innerHTML = `Instructions: ${recipe.strInstructions}`
         recipeList.append(recipeInstructions)
     })
 })
