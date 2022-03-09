@@ -26,6 +26,7 @@ button.addEventListener("click", async () => {
     })
 })
 
+
 //Button 2 - Random Meals 
 randomButton.addEventListener("click", async () => {
     const recipe = searchInput.value 
@@ -48,4 +49,5 @@ randomButton.addEventListener("click", async () => {
         recipeList.append(recipeInstructions)
     })
 })
+
 
