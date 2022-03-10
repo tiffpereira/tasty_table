@@ -1,22 +1,30 @@
 body {
-    background-color: #E8DeD1;
+    /* background-color: #E8DeD1; */
+    background-color: white;
     text-align: center;
 }
 
-h1 {
+/* h1 {
     font-family: 'Satisfy', cursive;
     font-size: 50px;
     color: rgb(1, 68, 33); 
     text-align: left; 
     margin-left: 50px;
     margin-bottom: 10px;
+    background-color: rgb(184, 167, 146);
+}  */
+
+header {
+    background-color: #efdbcd;
 }
 
 h2 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Satisfy', cursive;
     position: relative;
     display: block;
-    margin: 0 autoel
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: antiquewhite;
 }
 
 h3 {
@@ -35,6 +43,22 @@ h3 {
     height: 30px;
 }
 
+h4 {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-image {
+    width: 200px; 
+    display: inline-block;
+    position: relative;
+    margin-left: 0px;
+}
 
 p {
     font-size: 17px;
@@ -56,6 +80,7 @@ p {
     display: inline-block;
     padding: 10px 20px 10px 20px;
     width: 250px;
+    margin-top: 20px;
 }
 
 #search {
@@ -66,6 +91,7 @@ p {
     color: black;
     border-radius: 4px;
     transition-duration: .4s;
+    border-color: white;
 }
 
 #search:hover {
@@ -79,6 +105,7 @@ p {
     padding: 10px;
     margin-top: 20px;
     background-color: peachpuff;
+    border-color: white;
     border-radius: 4px;
     transition-duration: .4s;
 } 
