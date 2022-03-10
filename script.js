@@ -17,7 +17,7 @@ button.addEventListener("click", async () => {
         recipeList.append(recipeOutput)
         //Photo 
         const recipePhoto = document.createElement('div')
-        recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
+        recipePhoto.innerHTML = `<img div class = "recipe-photo" src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
         //Intructions title 
         const recipeInstructionsTitle = document.createElement('h4')
@@ -36,6 +36,8 @@ randomButton.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https:www.themealdb.com/api/json/v1/1/random.php`)
 
+    console.log(response)
+    
     const renderList = response.data.meals
 
     renderList.forEach((recipe) => {
@@ -45,7 +47,7 @@ randomButton.addEventListener("click", async () => {
         recipeList.append(recipeOutput)
         //Photo 
         const recipePhoto = document.createElement('div')
-        recipePhoto.innerHTML = `<img src = ${recipe.strMealThumb} >`
+        recipePhoto.innerHTML = `<img div class = "recipe-photo" src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
         //Intructions title 
         const recipeInstructionsTitle = document.createElement('h4')
