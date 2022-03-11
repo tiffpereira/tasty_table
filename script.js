@@ -86,8 +86,6 @@ button.addEventListener("click", async () => {
         recipeList.append(ingredientsList18)
         recipeList.append(ingredientsList19)
         recipeList.append(ingredientsList20)
-    
-
         //Intructions title 
         const recipeInstructionsTitle = document.createElement('h4')
         recipeInstructionsTitle.innerHTML = `Instructions`
@@ -96,6 +94,10 @@ button.addEventListener("click", async () => {
         const recipeInstructions = document.createElement('p')
         recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions) 
+        //footer 
+        const footer = document.createElement('footer')
+        footer.innerHTML = ''
+        recipeList.append(footer)
     })
 })
 
@@ -184,8 +186,6 @@ randomButton.addEventListener("click", async () => {
         recipeList.append(ingredientsList18)
         recipeList.append(ingredientsList19)
         recipeList.append(ingredientsList20)
-    
-
         //Intructions title 
         const recipeInstructionsTitle = document.createElement('h4')
         recipeInstructionsTitle.innerHTML = `Instructions`
@@ -194,5 +194,9 @@ randomButton.addEventListener("click", async () => {
         const recipeInstructions = document.createElement('p')
         recipeInstructions.innerHTML = `${recipe.strInstructions}`
         recipeList.append(recipeInstructions)
+        //footer 
+        const footer = document.createElement('footer')
+        footer.innerHTML = ''
+        recipeList.append(footer)
     })
 })
