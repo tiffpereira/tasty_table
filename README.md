@@ -1,4 +1,9 @@
 # Project_1_tasty_table
-Project 1 for GA using an API to create a user friendly site for recipes! 
+The goal for Project 1 is to use theMealDB API to create a user friendly site for recipes! 
 
-In this project, theMealDB API is used to output recipes based on the input from the user. In addition, if the user does not know what they would like to eat there is a randomizer button that suggests different recipes to them. 
+First a trello board was created that outlined what steps needed to be completed by the end of each day. Along with this, a general layout of the website was formed on wireframe to plan where each element would best be placed. Once the inital groundwork was complete, a basic HTML layout was created and javascript logic could begin. 
+
+Using theMealDB API, two different features were formed. The user can enter a meal into the input bar and search for a specfic recipe. If the user does not know what meal they want, they can press the "surprise me!" button which pulls displays a random recipe. The meal recipe displays its corresponding name, ingredients with their measurements, and instructions on how to prepare the meal. 
+
+Once the javascript was complete, CSS was used to style the website and make a clean user friendly site.
+
