@@ -107,17 +107,9 @@ p {
     color: white;
 }
 
-.buttons {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-
-}
-
 .recipe-photo {
     max-width: 50%;
     height: auto;
-
 }
 
 .recipe-list {
