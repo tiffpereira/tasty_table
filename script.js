@@ -20,7 +20,9 @@ button.addEventListener("click", async () => {
         recipePhoto.innerHTML = `<img div class = "recipe-photo" src = ${recipe.strMealThumb} >`
         recipeList.append(recipePhoto)
         //Ingredients title 
-
+        const ingredientTitle = document.createElement('h4')
+        ingredientTitle.innerHTML = `Ingredients`
+        recipeList.append(ingredientTitle)
         //Ingredients 
         const ingredientsList1 = document.createElement('ul')
         ingredientsList1.innerHTML = `${recipe.strMeasure1} ${recipe.strIngredient1}`
@@ -42,6 +44,27 @@ button.addEventListener("click", async () => {
         ingredientsList9.innerHTML = `${recipe.strMeasure9} ${recipe.strIngredient9}`
         const ingredientsList10 = document.createElement('ul')
         ingredientsList10.innerHTML = `${recipe.strMeasure10} ${recipe.strIngredient10}`
+        const ingredientsList11 = document.createElement('ul')
+        ingredientsList11.innerHTML = `${recipe.strMeasure11} ${recipe.strIngredient11}`
+        const ingredientsList12 = document.createElement('ul')
+        ingredientsList12.innerHTML = `${recipe.strMeasure12} ${recipe.strIngredient12}`
+        const ingredientsList13 = document.createElement('ul')
+        ingredientsList13.innerHTML = `${recipe.strMeasure13} ${recipe.strIngredient13}`
+        const ingredientsList14 = document.createElement('ul')
+        ingredientsList14.innerHTML = `${recipe.strMeasure14} ${recipe.strIngredient14}`
+        const ingredientsList15 = document.createElement('ul')
+        ingredientsList15.innerHTML = `${recipe.strMeasure15} ${recipe.strIngredient15}`
+        const ingredientsList16 = document.createElement('ul')
+        ingredientsList16.innerHTML = `${recipe.strMeasure16} ${recipe.strIngredient16}`
+        const ingredientsList17 = document.createElement('ul')
+        ingredientsList17.innerHTML = `${recipe.strMeasure17} ${recipe.strIngredient17}`
+        const ingredientsList18 = document.createElement('ul')
+        ingredientsList18.innerHTML = `${recipe.strMeasure18} ${recipe.strIngredient18}`
+        const ingredientsList19 = document.createElement('ul')
+        ingredientsList19.innerHTML = `${recipe.strMeasure19} ${recipe.strIngredient19}`
+        const ingredientsList20 = document.createElement('ul')
+        ingredientsList20.innerHTML = `${recipe.strMeasure20} ${recipe.strIngredient20}`
+    
 
         recipeList.append(ingredientsList1)
         recipeList.append(ingredientsList2)
@@ -53,6 +76,17 @@ button.addEventListener("click", async () => {
         recipeList.append(ingredientsList8)
         recipeList.append(ingredientsList9)
         recipeList.append(ingredientsList10)
+        recipeList.append(ingredientsList11)
+        recipeList.append(ingredientsList12)
+        recipeList.append(ingredientsList13)
+        recipeList.append(ingredientsList14)
+        recipeList.append(ingredientsList15)
+        recipeList.append(ingredientsList16)
+        recipeList.append(ingredientsList17)
+        recipeList.append(ingredientsList18)
+        recipeList.append(ingredientsList19)
+        recipeList.append(ingredientsList20)
+    
 
         //Intructions title 
         const recipeInstructionsTitle = document.createElement('h4')
@@ -89,7 +123,6 @@ randomButton.addEventListener("click", async () => {
         ingredientTitle.innerHTML = `Ingredients`
         recipeList.append(ingredientTitle)
         //Ingredients 
-
         const ingredientsList1 = document.createElement('ul')
         ingredientsList1.innerHTML = `${recipe.strMeasure1} ${recipe.strIngredient1}`
         const ingredientsList2 = document.createElement('ul')
@@ -163,5 +196,3 @@ randomButton.addEventListener("click", async () => {
         recipeList.append(recipeInstructions)
     })
 })
-
-
