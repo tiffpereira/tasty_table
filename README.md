@@ -14,5 +14,5 @@ Using theMealDB API, two different features were formed. The user can enter a me
 
 Once the javascript was complete, CSS was used to style the website and make a clean user friendly site.
 
-Deployed website: tricky-smile.surge.sh
+Deployed website: [Tasty Table](tricky-smile.surge.sh)
 Surge is only allowing the search button to work and not the "surprise me!" button. It works on my local file. 
