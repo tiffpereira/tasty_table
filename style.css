@@ -100,7 +100,7 @@ nav ul li a {
 .category-section {
     max-width: 1280px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
 }
 
@@ -121,6 +121,7 @@ nav ul li a {
     padding: 16px;
     font-size: 16px;
     max-width: 60px;
+    min-width: 60px;
 }
 
 .category-card-img {
@@ -135,6 +136,26 @@ nav ul li a {
     border: none;
     cursor: pointer;
     font-size: 14px;
+}
+
+/* CATEGORY PAGE */
+/* Category section */
+.category-page-section {
+    max-width: 1280px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: repeat(3, 300px [col-start]);
+    gap: 25px 0px;
+}
+
+.category-page-title {
+    font-size: 60px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
 }
 /* footer {
     height: 30px;
