@@ -222,9 +222,9 @@ async function getMealList(category) {
             cancel = c;
             })
         })
-        console.log(res.data)
+        console.log(res.data.meals)
         sessionStorage.removeItem('mealData')
-        sessionStorage.setItem('mealData', JSON.stringify(res.data))
+        sessionStorage.setItem('mealData', JSON.stringify(res.data.meals))
         window.location.href = 'mealList.html'
     } catch (error){
         console.error('Cannot get meals', error)

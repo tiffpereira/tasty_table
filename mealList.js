@@ -2,11 +2,11 @@
 let mealData = JSON.parse(sessionStorage.getItem('mealData'));
 
 // Now you can use mealData in this file
-console.log(mealData.meals);
+console.log(mealData);
 
 const mealSection = document.querySelector('.meal-section')
 
-const mealsList = mealData.meals 
+const mealsList = mealData 
 
 mealsList.forEach((meal) => {
     //create meal card div and add a class to it 
