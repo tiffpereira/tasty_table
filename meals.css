@@ -32,25 +32,41 @@ nav ul li a {
 
 /* Meals List */
 /* Category section  */
-.meal-section {
+.meal-list-title {
+    font-size: 56px;
     max-width: 1280px;
-    display: flex;
     margin: auto;
+    padding: 24px 0px;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(2, 30px [col-start]);
+    margin-bottom: 50px;
 }
 
+.meal-section {
+    max-width: 1280px;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
+    grid-gap: 80px 30px; /* Adjust as needed */
+}
 
 /* Category cards */
 .meal-card {
     background-color: aqua;
-    width: 200px;
-    height: 290px;
-    border-radius: 1rem;
+    width: 220px;
+    height: 330px;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin: auto;
+}
+
+.meal-title {
+    width: 200px;
+    align-self: center;
+    font-size: 16px;
 }
 
 .meal-info {
@@ -60,7 +76,7 @@ nav ul li a {
     align-self: center;
     padding: 4px 32px;
     font-size: 16px;
-    max-width: 60px;
+    max-width: 150px;
     min-width: 60px;
     margin-bottom: 40px;
     margin-top: -12px;
@@ -69,10 +85,13 @@ nav ul li a {
 .meal-card-img {
     margin-bottom: 12px;
     align-self: center;
+    width: 220px; 
+    height: 220px; 
+    border-radius: 2rem;
 }
 .meal-card-btn {
     background-color: #BCC7B9;
-    padding: 4px;
+    padding: 8px;
     border-radius: 1rem;
     color: #ffffff;
     border: none;
