@@ -17,22 +17,80 @@
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Satisfy&display=swap');
     </style>
 
-    <title>What Should I Eat Today?</title>
+    <title>Tasty Table</title>
 </head>
+
 <body>
     <header>
-        <img div class = "header-image"
-         src = https://lh3.googleusercontent.com/EeYBG6sNGzD1Un47Hppx-bis4gnsQRStg2uPanakPq7z1KN-2zmLu8Z1BWnBZXovUPN8IFpHFHE1lt3C0MTrFshYQSROxDWT3_dJoaCF6EDSas5Pzf7tKq8I2NRb9C6hrojaHc3M=w2400> 
+        <nav>
+            <ul class="leftNav">
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="story.html">Our Story</a></li> 
+            </ul>
+            <ul class="centerNav">
+                <li><a href="index.html">Tasty Table</a></li>
+            </ul>
+        </nav>        
     </header>
-    <div class = "search-bar">
-        <input type="text" id="search-input" placeholder="Find a recipe" autocomplete="off">
-            <button id="search">Search</button>
-    </div>
-        <button id="random">Surprise me!</button>
+    <section id="Hero-container">
+        <div id="Hero">
+            <div id="Hero-left">
+            <h1 id="Hero-title">Enjoy Dining In Again</h1>
+            <div class="search-section">
+                    <div class = "search-bar">
+                        <input type="text" id="search-input" placeholder="Find a recipe" autocomplete="off">
+                        <button id="search-button">Search</button>
+                    </div> 
+                    <h3 id="inspo-title">Need a little inspiration?</h3> 
+                    <button id="random">Surprise me!</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+       
    <section class = "Recipe-list">
        <h2>Recipes:</h2>
        <div class = "Recipe-picture"></div>
        <div class = "Recipe-instructions"></div>
    </section>
+   <section>
+        <div>
+            <h2>Popular Categories</h2>
+            <div class="category-section">
+                <div class="category-card">
+                    <div class="category-info">
+                        <h3>Dessert</h3>
+                        <button class="category-card-btn">See All</button>
+                    </div>
+                    
+                    <img class="category-card-img" 
+                    style="width: 150px; height: 150px; border-radius: 5rem;" src="assets/dessert.jpg"/>
+                </div>
+                <div class="category-card">
+                    <div class="category-info">
+                        <h3>Breakfast</h3>
+                        <button class="category-card-btn">See All</button>
+                    </div>
+                    
+                    <img class="category-card-img" 
+                    style="width: 150px; height: 150px; border-radius: 5rem;" src="assets/breakfast.jpg"/>
+                </div>
+                <div class="category-card">
+                    <div class="category-info">
+                        <h3>Chicken</h3>
+                        <button class="category-card-btn">See All</button>
+                    </div>
+                    
+                    <img class="category-card-img" 
+                    style="width: 150px; height: 150px; border-radius: 5rem;" src="assets/chicken.jpg"/>
+                </div>
+
+            </div>
+        </div>
+            
+   </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
 </body>
 </html>

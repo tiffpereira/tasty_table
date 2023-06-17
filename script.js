@@ -7,7 +7,7 @@ const recipeList = document.querySelector('.Recipe-list')
 button.addEventListener("click", async () => {
     const recipe = searchInput.value 
     const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`)
-
+    console.log(response.data)
     const renderList = response.data.meals 
 
     renderList.forEach((recipe) => {

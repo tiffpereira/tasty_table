@@ -2,7 +2,141 @@ body {
     background-color: white;
     text-align: center;
 }
-footer {
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* This will remove the dot from the li */
+}
+
+nav ul li a {
+    padding: 12px;
+    text-decoration: none;
+}
+
+.centerNav {
+    flex-grow: 2; /* This will push the other ul to the sides */
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+}
+
+/* Hero Section */
+#Hero-container {
+    background-image: url('assets/heroimage.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: -300px -800px; */
+}
+
+#Hero {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#Hero-title {
+    font-size: 110px;
+    text-align: left;
+}
+
+#Hero-left {
+    max-width: 55%;
+}
+/* Search bar and section */
+.search-section {
+    max-width: 400px;
+    text-align: left;
+
+}
+.search-bar {
+    width: 350px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#search-input {
+    padding: 10px;
+    width: calc(100% - 40px); /* Width of the parent minus padding and space for button */
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+}
+
+#search-button {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjust this value to move the button left or right within the input field */
+    transform: translateY(-50%);
+    background-color: #95A698;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#inspo-title {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+/* Category section  */
+.category-section {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* Category cards */
+.category-card {
+    background-color: aqua;
+    width: 175px;
+    height: 175px;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.category-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    font-size: 16px;
+    max-width: 60px;
+}
+
+.category-card-img {
+    margin-top: 12px;
+    margin-left: 8px;
+}
+.category-card-btn {
+    background-color: #BCC7B9;
+    padding: 4px;
+    border-radius: 1rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* footer {
     height: 30px;
     background-color: #efdbcd;
     margin-top: 20px;
@@ -137,4 +271,4 @@ ul {
     margin: 0 auto;
     margin-left: 0px;
     padding: 0px;
-}
+} */
