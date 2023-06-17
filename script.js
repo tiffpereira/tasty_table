@@ -200,6 +200,8 @@
 //         recipeList.append(footer)
 //     })
 // })
+const CancelToken = axios.CancelToken
+let cancel
 
 const categoryBtn = document.querySelectorAll('.category-card-btn').forEach(button => {
     button.addEventListener('click', function(event) {
@@ -210,8 +212,16 @@ const categoryBtn = document.querySelectorAll('.category-card-btn').forEach(butt
 })
 
 async function getMealList(category) {
+    if (cancel !== undefined) {
+        cancel()
+    }
     try {
-        const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
+        const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`, 
+        { cancelToken: new CancelToken(function executor(c) {
+            // An executor function receives a cancel function as a parameter
+            cancel = c;
+            })
+        })
         console.log(res.data)
         sessionStorage.removeItem('mealData')
         sessionStorage.setItem('mealData', JSON.stringify(res.data))
