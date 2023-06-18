@@ -208,10 +208,12 @@ const categoryBtn = document.querySelectorAll('.category-card-btn').forEach(butt
         const category = this.dataset.category
         console.log(`Button clicked, category: ${category}`); 
         getMealList(category)
+        event.preventDefault()
     })
 })
 
 async function getMealList(category) {
+    sessionStorage.removeItem('mealData')
     if (cancel !== undefined) {
         cancel()
     }
@@ -223,7 +225,6 @@ async function getMealList(category) {
             })
         })
         console.log(res.data.meals)
-        sessionStorage.removeItem('mealData')
         sessionStorage.setItem('mealData', JSON.stringify(res.data.meals))
         window.location.href = 'mealList.html'
     } catch (error){

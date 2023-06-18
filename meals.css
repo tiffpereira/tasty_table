@@ -30,6 +30,7 @@ nav ul li a {
     margin-right: 250px;
 }
 
+/* CATEGORY PAGE */
 /* Meals List */
 /* Category section  */
 .meal-list-title {
@@ -98,3 +99,88 @@ nav ul li a {
     cursor: pointer;
     font-size: 14px;
 }
+
+
+/* RECIPE PAGE */
+.recipe-title {
+    font-size: 64px;
+}
+
+.recipe-header {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: flex-end;
+    place-items: center;
+    position: relative;
+}
+
+.recipe-title-container {
+    background-color: #CDC2B4;
+    padding: 50px;
+    width: 50%;
+    overflow: visible;
+    border-radius: 1.5rem;
+    position: absolute; /* Added */
+    left: 0; /* Added */
+    top: 50%; /* Added */
+    transform: translateY(-50%); /* Added */
+    opacity: 0.8; /* Added */
+    color: #000; /* Added */
+    z-index: 1; /* Added */
+}
+
+.recipe-img {
+    border-radius: 1.5rem;
+}
+
+.ingredients-title {
+    font-size: 44px;
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+
+.ingredients-list {
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.list {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.instructions-title {
+    font-size: 44px;
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.instructions {
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 36px;
+    font-size: 20px
+}
+
+.video {
+    max-width: 1280px;
+    width: 80%;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -28,6 +28,11 @@ mealsList.forEach((meal) => {
     mealDetailsBtn.innerHTML = "See Recipe"
     mealInfo.append(mealTitle, mealDetailsBtn)
 
+    mealDetailsBtn.addEventListener('click', () => {
+        sessionStorage.setItem('selectedMealData', JSON.stringify(meal)) //save meal object to sessionStorage to pull into recipe.html
+        window.location.href = 'recipe.html'
+    })
+
     const mealImg = document.createElement('img')
     mealImg.classList.add('meal-card-img')
     mealImg.src = `${meal.strMealThumb}`
