@@ -3,7 +3,7 @@
 // const randomButton = document.querySelector('#random')
 // const recipeList = document.querySelector('.Recipe-list')
 
-//Button 1 - Searched Meals 
+// //Button 1 - Searched Meals 
 // button.addEventListener("click", async () => {
 //     const recipe = searchInput.value 
 //     const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`)
