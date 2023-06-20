@@ -16,8 +16,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Satisfy&display=swap');
     </style>
-    <!-- Add slick.css in the head section -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 
 </head>
 
@@ -32,7 +30,7 @@
                 <li><a href="story.html">Our Story</a></li> 
             </ul>
             <ul class="centerNav">
-                <li><a href="index.html">Tasty Table</a></li>
+                <li><a href="index.html " class="tasty-table">Tasty Table</a></li>
             </ul>
         </nav>        
     </header>
@@ -46,23 +44,25 @@
                             <input type="text" id="search-input" placeholder="Find a recipe" autocomplete="off">
                             <button id="search-button" type="submit">Search</button>
                         </div> 
-                        <h3 id="inspo-title">Need a little inspiration?</h3> 
-                        <button id="random">Surprise me!</button>
+                        <div class="random-section">
+                            <h3 id="inspo-title">Need a little inspiration?</h3> 
+                            <button id="random">Surprise me!</button>
+                        </div>
+                        
                 </div>
 
             </div>
         </div>
     </section>
     
-       
-   <section class = "Recipe-list">
-       <h2>Recipes:</h2>
-       <div class = "Recipe-picture"></div>
-       <div class = "Recipe-instructions"></div>
-   </section>
    <section>
         <div>
-            <h2>Popular Categories</h2>
+            <div class="categories-title-container">
+                <div></div>
+                <h2 class="category-landing-title">Popular Categories</h2>
+                <a href="categories.html" class="more-categories"> All Categories </a>
+            </div>
+            
             <div class="category-section">
                 <div class="category-card">
                     <div class="category-info">

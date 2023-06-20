@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #DACDC7;
     text-align: center;
 }
 
@@ -30,6 +30,17 @@ nav ul li a {
     margin-right: 250px;
 }
 
+.tasty-table {
+    color: #225e4f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+}
+
+
 /* CATEGORY PAGE */
 /* Meals List */
 /* Category section  */
@@ -54,7 +65,7 @@ nav ul li a {
 
 /* Category cards */
 .meal-card {
-    background-color: aqua;
+    background-color: white;
     width: 220px;
     height: 330px;
     border-radius: 1.5rem;
