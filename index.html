@@ -39,15 +39,17 @@
     <section id="Hero-container">
         <div id="Hero">
             <div id="Hero-left">
-            <h1 id="Hero-title">Enjoy Dining In Again</h1>
-            <div class="search-section">
-                    <div class = "search-bar">
-                        <input type="text" id="search-input" placeholder="Find a recipe" autocomplete="off">
-                        <button id="search-button">Search</button>
-                    </div> 
-                    <h3 id="inspo-title">Need a little inspiration?</h3> 
-                    <button id="random">Surprise me!</button>
-            </div>
+                <h1 id="Hero-title">Enjoy Dining In Again</h1>
+
+                <div class="search-section">
+                        <div class = "search-bar">
+                            <input type="text" id="search-input" placeholder="Find a recipe" autocomplete="off">
+                            <button id="search-button" type="submit">Search</button>
+                        </div> 
+                        <h3 id="inspo-title">Need a little inspiration?</h3> 
+                        <button id="random">Surprise me!</button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -65,7 +67,7 @@
                 <div class="category-card">
                     <div class="category-info">
                         <h3>Dessert</h3>
-                        <button class="category-card-btn">See All</button>
+                        <button class="category-card-btn" id="dessert-btn" data-category="Dessert">See All</button>
                     </div>
                     
                     <img class="category-card-img" 
@@ -74,7 +76,7 @@
                 <div class="category-card">
                     <div class="category-info">
                         <h3>Breakfast</h3>
-                        <button class="category-card-btn">See All</button>
+                        <button class="category-card-btn" id="breakfast-btn" data-category="Breakfast">See All</button>
                     </div>
                     
                     <img class="category-card-img" 
@@ -83,7 +85,7 @@
                 <div class="category-card">
                     <div class="category-info">
                         <h3>Chicken</h3>
-                        <button class="category-card-btn">See All</button>
+                        <button class="category-card-btn" id="chicken-btn" data-category="Chicken">See All</button>
                     </div>
                     
                     <img class="category-card-img" 

@@ -1,6 +1,13 @@
 // Retrieve data from sessionStorage
 let mealData = JSON.parse(sessionStorage.getItem('mealData'));
 
+if (sessionStorage.getItem('searchData')) {
+    mealData = JSON.parse(sessionStorage.getItem('searchData'));
+    sessionStorage.removeItem('searchData');  // Clear the search data after using it
+} else if (sessionStorage.getItem('mealData')) {
+    mealData = JSON.parse(sessionStorage.getItem('mealData'));
+    sessionStorage.removeItem('mealData');  // Clear the category data after using it
+}
 // Now you can use mealData in this file
 console.log(mealData);
 
