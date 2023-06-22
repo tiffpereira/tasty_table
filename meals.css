@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
-    background-color: #DACDC7;
+    background-color: #ffffff;
     text-align: center;
 }
 
 /* navbar */
+
+header {
+    background-color: #aad2ba5e ;
+}
 
 nav {
     display: flex;
@@ -11,6 +17,7 @@ nav {
     padding: 4px;
     max-width: 1280px;
     margin: auto;
+    align-items: center;   
 }
 
 nav ul {
@@ -18,9 +25,10 @@ nav ul {
     list-style: none; /* This will remove the dot from the li */
 }
 
-nav ul li a {
+a {
     padding: 12px;
     text-decoration: none;
+    color: black;
 }
 
 .centerNav {
@@ -33,17 +41,17 @@ nav ul li a {
 .tasty-table {
     color: #225e4f;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
 }
-
-a {
-    color: black;
-}
-
 
 /* CATEGORY PAGE */
 /* Meals List */
 /* Category section  */
+.meal-list-container {
+    margin-bottom: 40px;
+}
+
 .meal-list-title {
     font-size: 56px;
     max-width: 1280px;
@@ -113,6 +121,10 @@ a {
 
 
 /* RECIPE PAGE */
+.recipe-container {
+    margin-bottom: 40px;
+}
+
 .recipe-title {
     font-size: 64px;
 }
@@ -195,3 +207,40 @@ ul {
     margin-right: auto;
 }
 
+/* FOOTER */
+footer {
+    background-color: #aad2ba5e ;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container-2 {
+    display: flex;
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    font-size: 5px;
+    gap: 1px;
+}
+
+.built {
+    margin-top: -4px;
+}

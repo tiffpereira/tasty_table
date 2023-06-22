@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap'); */
 
 body {
     background-color: #ffffff;
@@ -8,12 +7,18 @@ body {
 
 /* navbar */
 
+header {
+    background-color: #aad2ba5e ;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     padding: 4px;
     max-width: 1280px;
     margin: auto;
+    align-items: center;
+    
 }
 
 nav ul {
@@ -205,6 +210,7 @@ a {
     margin: auto;
     grid-template-columns: repeat(3, 300px [col-start]);
     gap: 36px 0px;
+    margin-bottom: 40px;
 }
 
 .category-page-title {
