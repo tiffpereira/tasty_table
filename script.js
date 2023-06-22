@@ -25,7 +25,7 @@ async function searchMeals(searchInput) {
 
 // Button 2 - Random Meals 
 randomBtn.addEventListener("click", async () => {
-    const response = await axios.get(`https:www.themealdb.com/api/json/v1/1/random.php`)
+    const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`)
     console.log(response)
     
     sessionStorage.removeItem('selectedMealData')

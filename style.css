@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap'); */
+
 body {
-    background-color: #DACDC7;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -18,7 +21,7 @@ nav ul {
     list-style: none; /* This will remove the dot from the li */
 }
 
-nav ul li a {
+a {
     padding: 12px;
     text-decoration: none;
 }
@@ -33,7 +36,8 @@ nav ul li a {
 .tasty-table {
     color: #225e4f;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
 }
 
 /* Hero Section */
@@ -155,12 +159,13 @@ a {
     justify-content: center;
     grid-template-columns: repeat(3, 30px [col-start]);
     gap: 0px 150px;
+    margin-bottom: 40px;
 }
 
 
 /* Category cards */
 .category-card {
-    background-color: white;
+    background-color: #f0f0f0;
     width: 175px;
     height: 175px;
     border-radius: 1rem;
@@ -182,7 +187,7 @@ a {
     margin-left: 8px;
 }
 .category-card-btn {
-    background-color: #BCC7B9;
+    background-color: #bcc7b9;
     padding: 8px;
     border-radius: 1rem;
     color: #ffffff;
@@ -211,139 +216,40 @@ a {
     justify-content: center;
 }
 
-/* footer {
-    height: 30px;
-    background-color: #efdbcd;
-    margin-top: 20px;
-    margin-bottom: 30px;
+/* FOOTER */
+footer {
+    background-color: #aad2ba5e ;
 }
 
-header {
-    background-color: #efdbcd;
-}
-
-h2 {
-    font-family: 'Satisfy', cursive;
-    font-size: 32px;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #efdbcd;
-    color: #175c4d;
-}
-
-h3 {
-    font-family: 'PT Serif', serif;
-    font-size: 22px;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px 10px 20px;
-    border-style: double;
-    border-color: peachpuff;
-    border-radius: 10px;
-    border-width: thick;
-    text-transform: capitalize;
-    width: 450px;
-    height: 30px;
-}
-
-h4 {
-    font-family: 'Satisfy', cursive;
-    font-size: 25px;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: #efdbcd;
-    color: #175c4d;
-}
-
-.header-image {
-    width: 200px; 
-    display: inline-block;
-    position: relative;
-}
-
-p {
-    font-size: 17px;
-    font-family: 'PT Serif', serif;
-    text-align: center;
-    position: relative;
-    border-style: dashed;
-    padding: 20px 10px 20px 10px;
-    width: 75%;
-    height: auto;
-    margin: auto;
-}
-
-#search-bar {
+.footer-container {
     display: flex;
-    flex-direction: row;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
 }
 
-#search-input {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
-    width: 250px;
-    margin-top: 20px;
-}
-
-#search {
-    font-family: 'PT Serif', serif;
-    display: inline-block;
-    padding: 10px; 
-    background-color: peachpuff;
-    color: black;
-    border-radius: 4px;
-    transition-duration: .4s;
-    border-color: white;
-}
-
-#search:hover {
-    background-color: rgb(236, 174, 119);
-    color: white;
-}
-
-#random {
-    font-family: 'PT Serif', serif;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: peachpuff;
-    border-color: white;
-    border-radius: 4px;
-    transition-duration: .4s;
-} 
-
-#random:hover {
-    background-color: rgb(236, 174, 119);
-    color: white;
-}
-
-.recipe-photo {
-    max-width: 50%;
-    height: auto;
-}
-
-.recipe-list {
-    font-family: 'PT Serif', serif;
-    position: center;
-    display: block;
-    margin: 0 auto;
-}
-
-ul {
+.footer-links-container {
+    display: flex;
     justify-content: center;
-    font-family: 'PT Serif', serif;
-    margin: 0 auto;
-    margin-left: 0px;
-    padding: 0px;
-} */
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container-2 {
+    display: flex;
+    max-width: 1280px;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    font-size: 5px;
+    gap: 1px;
+}
+
+.built {
+    margin-top: -4px;
+}
