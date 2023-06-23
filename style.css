@@ -362,9 +362,16 @@ footer {
     gap: 48px;
     justify-items: center;
     align-items: center;
+}
+.category-landing-title {
+    margin-left: -24px;
+}
+.category-card {
     margin-left: -40px;
 }
-
+.more-categories {
+    margin-left: -30px;
+}
 /* Footer section */
 .footer-container {
     display: grid;
@@ -401,5 +408,97 @@ footer {
 
 /* Up to 1024px, Tablet sizing */
 @media (max-width: 1024px) { 
+nav {
+    width: 100%;
+}
+/* hero section */
+#Hero-container {
+    background-image: url('assets/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: -300px -800px; */
+}
 
+#Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+
+}
+#Hero-left {
+    width: 80%;
+}
+#Hero-title {
+    font-size: 60px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.search-bar {
+    width: 290px;
+}
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.random-section {
+    justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+/* categories section */
+.categories-title-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.category-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    width: 80%;
+}
+
+/* Footer section */
+.footer-container {
+    display: grid;
+    justify-content: center;
+}
+
+.footer-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    justify-content: center;
+}
+
+/* CATEGORIES PAGE */
+.category-page-title {
+    font-size: 40px;
+}
+.category-page-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-left: -44px;
+    gap: 40px;
+}
 }
