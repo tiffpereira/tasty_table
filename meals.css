@@ -32,6 +32,10 @@ a {
     color: black;
 }
 
+.leftNav a {
+    font-weight: bold;
+}
+
 .centerNav {
     flex-grow: 2; /* This will push the other ul to the sides */
     display: flex;
@@ -259,6 +263,11 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+
+.footer-links-container {
+    font-weight: bold;
+}
+
 
 .social-icons {
     display: flex;
