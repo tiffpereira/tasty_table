@@ -317,7 +317,7 @@ footer {
 
 @media (max-width: 425px) { 
 .nav {
-    width: screen;
+    width: 100%;
 }
 
 /* hero section */
@@ -362,7 +362,7 @@ footer {
     gap: 48px;
     justify-items: center;
     align-items: center;
-    margin-left: -28px;
+    margin-left: -40px;
 }
 
 /* Footer section */
