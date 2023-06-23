@@ -395,6 +395,60 @@ nav {
 .social-icons {
     justify-content: center;
 }
+/* RECIPES PAGE */
+.recipe-title {
+    font-size: 44px;
+}
 
+.recipe-title-container {
+    margin: 16px;
+}
+.recipe-img {
+    width: 300px;
+    height: 300px;
+}
+
+.recipe-img-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+.ingredients-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px;
+}
+.ingredients-title{
+    font-size: 32px;
+}
+.list {
+    padding: 16px;
+}
+.instructions-title {
+    font-size: 32px;
+    order: 3;
+}
+.instructions {
+    padding: 20px;
+    margin: 12px;
+    order: 4;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+}
+.title-wrapper {
+    order: 1;
+    margin-top: 12px;
+}
+.video {
+    order: 5;
+}
 }
 

@@ -425,11 +425,11 @@ nav {
     justify-content: center;
     margin: auto;
     align-items: center;
-    width: 80%;
+    width: 90%;
 
 }
 #Hero-left {
-    width: 80%;
+    width: 100%;
 }
 #Hero-title {
     font-size: 60px;
@@ -500,5 +500,8 @@ nav {
     align-items: center;
     margin-left: -44px;
     gap: 40px;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
 }
 }

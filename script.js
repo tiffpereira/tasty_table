@@ -1,15 +1,6 @@
 const searchBtn = document.querySelector('#search-button')
 const randomBtn = document.querySelector('#random')
 const recipeList = document.querySelector('.Recipe-list')
-const hamburgerMenu = document.querySelector('.hamburger-menu')
-const navLinks = document.querySelectorAll('.nav-links')
-
-// Nav bar hamburger menu 
-hamburgerMenu.addEventListener('click', () => {
-    console.log('clicked!')
-  navLinks.classList.toggle('show')
-})
-
 
 // Button 1 - Searched Meals 
 searchBtn.addEventListener("click", function(event) {
