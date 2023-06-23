@@ -4,7 +4,7 @@ Tasty Table is a web-based recipe search engine designed to help users discover 
 Deployed website: [Tasty Table](https://tastytable.surge.sh/)
 
 ### Motivation
-The project was born out of a personal need for diverse and accessible recipes after being diagnosed with Crohn's disease, which necessitated a strict home cooking regimen. Realizing the struggle of finding daily cooking inspiration, the idea for Tasty Table was conceived as a solution to aid not just me, but many others in their culinary journeys.
+The project was born out of a personal need for diverse and accessible recipes after being diagnosed with an autoimmune disease, which necessitated a strict home cooking regimen. Realizing the struggle of finding daily cooking inspiration, the idea for Tasty Table was conceived as a solution to aid anyone on their culinary journey.
 
 ### Technologies Used
 * HTML
@@ -13,7 +13,7 @@ The project was born out of a personal need for diverse and accessible recipes a
 * TheMealDB API
 * Trello (organization)
 * Behance/Dribbble (for design inspiration)
-* Figma (for wireframes)
+* [Figma](https://www.figma.com/file/yIKa0PoH4TD2QenZeEqXrP/Tasty-Table?type=design&node-id=0%3A1&mode=design&t=cVt1BPJI5deD3GWJ-1)
 
 ### Features
 Search Functionality: Users can search for specific recipes using the search bar.
