@@ -111,7 +111,7 @@ a {
 /* Surprise Btn */
 .random-section {
     display: flex;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-bottom: 12px;
 }
 
@@ -127,6 +127,9 @@ a {
     border-radius: 1.5rem;
     border: none;
     cursor: pointer;
+    height: 36px;
+    margin-top: 6px;
+    margin-left: 12px;
 }
 
 /* Category section  */

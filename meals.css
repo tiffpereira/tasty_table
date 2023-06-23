@@ -73,7 +73,7 @@ a {
 
 /* Category cards */
 .meal-card {
-    background-color: white;
+    background-color: #f0f0f0;
     width: 220px;
     height: 330px;
     border-radius: 1.5rem;
@@ -167,7 +167,8 @@ a {
 
 .recipe-img {
     border-radius: 1.5rem;
-    width: 40%;
+    width: 50%;
+    align-self: center;
 }
 
 .ingredients-section {

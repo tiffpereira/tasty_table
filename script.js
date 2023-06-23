@@ -9,6 +9,12 @@ searchBtn.addEventListener("click", function(event) {
     searchMeals(searchInput)
 })
 
+document.querySelector('#search-form').addEventListener('submit', function(event) {
+    event.preventDefault()
+    const searchInput = document.querySelector('#search-input').value 
+    searchMeals(searchInput) 
+})
+
 async function searchMeals(searchInput) {
     const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
     console.log(response.data.meals)
