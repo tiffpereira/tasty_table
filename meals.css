@@ -372,3 +372,8 @@ footer {
     }
 
     }
+
+/* Up to 1024px, Tablet sizing */
+@media (max-width: 1024px) { 
+
+}

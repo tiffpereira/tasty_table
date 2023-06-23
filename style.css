@@ -316,7 +316,6 @@ footer {
 /* RESPONSIVE SIZING */
 
 @media (max-width: 425px) { 
-
 .nav {
     width: screen;
 }
@@ -397,4 +396,10 @@ footer {
     margin-left: -44px;
     gap: 40px;
 }
+}
+
+
+/* Up to 1024px, Tablet sizing */
+@media (max-width: 1024px) { 
+
 }
