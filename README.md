@@ -16,10 +16,10 @@ The project was born out of a personal need for diverse and accessible recipes a
 * [Figma](https://www.figma.com/file/yIKa0PoH4TD2QenZeEqXrP/Tasty-Table?type=design&node-id=0%3A1&mode=design&t=cVt1BPJI5deD3GWJ-1)
 
 ### Features
-Search Functionality: Users can search for specific recipes using the search bar.
-Random Recipe Button: When clicked, this button presents a random recipe to the user.
-Browse Categories: Users can browse through various food categories and select a specific category to view its meals.
-Meal Recipes: Users can select a specific meal to view its detailed recipe.
+- Search Functionality: Users can search for specific recipes using the search bar.
+- Random Recipe Button: When clicked, this button presents a random recipe to the user.
+- Browse Categories: Users can browse through various food categories and select a specific category to view its meals.
+- Meal Recipes: Users can select a specific meal to view its detailed recipe.
 
 ### Design Process
 The design process started with low-fidelity wireframes sketched in Goodnotes. These were then translated into mid- and high-fidelity wireframes in Figma as the design evolved. The color palette, font choices (like the Lobster font for the logo), and responsiveness on various screen sizes were considered to create a simple and enjoyable user experience.
