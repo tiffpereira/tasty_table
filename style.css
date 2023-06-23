@@ -47,7 +47,7 @@ a {
 
 /* Hero Section */
 #Hero-container {
-    background-image: url('assets/heroimage.jpg');
+    background-image: url('assets/hero.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     /* background-position: -300px -800px; */

@@ -11,27 +11,62 @@ window.onload = async function() {
     console.log(res.data.meals[0])
     const meal = res.data.meals[0]
 
+    //create iframe, add class
+    let video = document.createElement('iframe')
+    video.classList.add('video')
+    
+    //get videoId from YouTube URL
+    let videoId = meal.strYoutube.split('v=')[1] //spliting at v= into 2 arrays, we are selecting the 1th index to get video id and not the url section before v=
+    let ampersandPosition = videoId.indexOf('&') //finding ampersand aka additional parameters after the video id
+    if(ampersandPosition != -1) { //ampersand returns -1 if the parameter is not there
+    videoId = videoId.substring(0, ampersandPosition) //if parameter is there it removes it 
+    }
+
+    //set src of the iframe
+    video.src = `https://www.youtube.com/embed/${videoId}`
+
+    recipeSection.append(video)
+
+    //creating section and adding class
+    const imgInstructionsContainer = document.createElement('div')
+    imgInstructionsContainer.classList.add('recipe-img-container')
+    
     //creating header and adding class
     const recipeTitleContainer = document.createElement('div')
     recipeTitleContainer.classList.add('recipe-title-container')
 
-    //create title, add class, pass into header
+    //create category title, add pass, pass into recipe title 
+    let categorytitle = document.createElement('h3')
+    categorytitle.classList.add('recipe-category-title')
+    categorytitle.innerHTML = `${meal.strArea}`
+    recipeTitleContainer.append(categorytitle)
+
+    //create title, add class, pass into title container
     let recipeTitle = document.createElement('h1')
     recipeTitle.classList.add('recipe-title')
     recipeTitle.innerHTML = `${meal.strMeal}`
     recipeTitleContainer.append(recipeTitle)
 
-    //create img, add class, pass into header
+    //create img, add class, pass into title container
     let recipeImg = document.createElement('img')
     recipeImg.classList.add('recipe-img')
     recipeImg.src = `${meal.strMealThumb}`
 
-    recipeHeader.append(recipeTitleContainer, recipeImg)
+    //div to wrap title in for styling purposes
+    let titleWrapper = document.createElement('div')
+    titleWrapper.classList.add('title-wrapper')
+    titleWrapper.append(recipeTitleContainer)
+    recipeSection.append(titleWrapper)
 
+    recipeSection.append(recipeImg)
+
+    let ingredientSection = document.createElement('div')
+    ingredientSection.classList.add('ingredients-section')
+    
     let ingredientsTitle = document.createElement('h1')
     ingredientsTitle.classList.add('ingredients-title')
     ingredientsTitle.innerHTML = 'Ingredient Checklist'
-    recipeSection.append(ingredientsTitle)
+    ingredientSection.append(ingredientsTitle)
 
     let ingredientsList = document.createElement('ul')
     ingredientsList.classList.add('ingredients-list')
@@ -49,6 +84,7 @@ window.onload = async function() {
             // create checkbox input element
             let checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
+            checkbox.classList.add('checkbox')
             
             // Create a label for the checkbox
             let label = document.createElement('label');
@@ -61,8 +97,11 @@ window.onload = async function() {
     
         }
     }
-    
-    recipeSection.append(ingredientsList)
+
+    ingredientSection.append(ingredientsList)
+    imgInstructionsContainer.append(ingredientSection, recipeImg)
+    recipeSection.append(imgInstructionsContainer)
+
 
     //create instructions title 
     let instructions = document.createElement('h1')
@@ -74,21 +113,5 @@ window.onload = async function() {
     instructionsInfo.classList.add('instructions')
     instructionsInfo.innerHTML = `${meal.strInstructions}`
     recipeSection.append(instructionsInfo)
-
-    //create iframe, add class
-    let video = document.createElement('iframe')
-    video.classList.add('video')
-    
-    //get videoId from YouTube URL
-    let videoId = meal.strYoutube.split('v=')[1] //spliting at v= into 2 arrays, we are selecting the 1th index to get video id and not the url section before v=
-    let ampersandPosition = videoId.indexOf('&') //finding ampersand aka additional parameters after the video id
-    if(ampersandPosition != -1) { //ampersand returns -1 if the parameter is not there
-    videoId = videoId.substring(0, ampersandPosition) //if parameter is there it removes it 
-    }
-
-    //set src of the iframe
-    video.src = `https://www.youtube.com/embed/${videoId}`
-
-    recipeSection.append(video)
 
 }

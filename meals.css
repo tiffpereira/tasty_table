@@ -125,36 +125,53 @@ a {
     margin-bottom: 40px;
 }
 
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 .recipe-title {
     font-size: 64px;
 }
 
-.recipe-header {
+.recipe-title-container {
     display: flex;
     max-width: 1280px;
     margin: auto;
-    justify-content: flex-end;
-    place-items: center;
-    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.recipe-category-title {
+    margin-bottom: -40px;
+    color: #AAD2BA;
+}
+/* Contains img and instructions */
+.recipe-img-container {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    max-width: 1280px;
+    justify-content: center;
 }
 
-.recipe-title-container {
-    background-color: #CDC2B4;
-    padding: 50px;
-    width: 50%;
-    overflow: visible;
-    border-radius: 1.5rem;
-    position: absolute; /* Added */
-    left: 0; /* Added */
-    top: 50%; /* Added */
-    transform: translateY(-50%); /* Added */
-    opacity: 0.8; /* Added */
-    color: #000; /* Added */
-    z-index: 1; /* Added */
+.recipe-title-img {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 40px;
 }
 
 .recipe-img {
     border-radius: 1.5rem;
+    width: 40%;
+}
+
+.ingredients-section {
+    margin-right: 40px;
 }
 
 .ingredients-title {
@@ -164,12 +181,14 @@ a {
     margin: auto;
     margin-top: 36px;
     margin-bottom: 16px;
+    color: #235D4D;
 }
 
 .ingredients-list {
     max-width: 1280px;
     justify-content: center;
     margin: auto;
+    text-align: left;
 }
 
 ul {
@@ -179,8 +198,17 @@ ul {
 .list {
     margin-right: 40px;
     font-size: 20px;
-}
+    border-bottom: 4px dashed #AAD2BA;
+    padding-bottom: 8px;
+    padding-top: 8px;
 
+}
+.checkbox {
+    padding: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* Instruction Section */
 .instructions-title {
     font-size: 44px;
     max-width: 1280px;
@@ -188,10 +216,12 @@ ul {
     margin: auto;
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-top: 36px;
+    color: #235D4D;
 }
 
 .instructions {
-    max-width: 1280px;
+    max-width: 1080px;
     justify-content: center;
     margin: auto;
     margin-bottom: 36px;
@@ -205,6 +235,8 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 2rem;
+    margin-top: 32px;
 }
 
 /* FOOTER */
