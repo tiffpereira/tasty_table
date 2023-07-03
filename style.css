@@ -505,3 +505,64 @@ nav {
     margin: auto;
 }
 }
+
+/* Hamburger menu */
+
+.hamburger-menu {
+    display: none !important;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .hamburger-menu .fas {
+    font-size: 2em;
+  }
+  
+@media screen and (max-width: 600px) {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+
+    .centerNav {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 68px;
+    }
+
+    .leftNav {
+    list-style: none;
+    padding-left: 0;
+    padding: 12px 0px;
+    }
+    
+    .leftNav li {
+    display: none;
+    margin: 12px;
+    font-size: 20px;
+    }
+
+.hamburger-menu {
+    display: block !important;
+}
+
+.leftNav.show {
+    position: absolute;
+    top: 45px;
+    background-color: #aad2ba;
+    width: 100%;
+    flex-direction: column;
+}
+
+.leftNav.show li {
+    display: block;
+    padding: 12px;
+} 
+}
+  
+  
+  
+  

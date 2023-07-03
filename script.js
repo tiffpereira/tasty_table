@@ -1,6 +1,23 @@
 const searchBtn = document.querySelector('#search-button')
 const randomBtn = document.querySelector('#random')
 const recipeList = document.querySelector('.Recipe-list')
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+const hamburgerIcon = document.querySelector('.hamburger-menu .fas')
+const leftNav = document.querySelector('.leftNav')
+
+//Hamburger menu functionality 
+hamburgerMenu.addEventListener('click', (event) => {
+  event.stopPropagation()
+  leftNav.classList.toggle('show')
+  hamburgerIcon.classList.toggle('fa-bars')
+  hamburgerIcon.classList.toggle('fa-times')
+})
+
+document.addEventListener('click', () => {
+  leftNav.classList.remove('show')
+  hamburgerIcon.classList.add('fa-bars')
+  hamburgerIcon.classList.remove('fa-times')
+})
 
 // Button 1 - Searched Meals 
 searchBtn.addEventListener("click", function(event) {

@@ -1,3 +1,21 @@
+//Hamburger menu functionality 
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+const hamburgerIcon = document.querySelector('.hamburger-menu .fas')
+const leftNav = document.querySelector('.leftNav')
+
+hamburgerMenu.addEventListener('click', (event) => {
+    event.stopPropagation()
+    leftNav.classList.toggle('show')
+    hamburgerIcon.classList.toggle('fa-bars')
+    hamburgerIcon.classList.toggle('fa-times')
+  })
+  
+  document.addEventListener('click', () => {
+    leftNav.classList.remove('show')
+    hamburgerIcon.classList.add('fa-bars')
+    hamburgerIcon.classList.remove('fa-times')
+  })
+
 //mealData from categories
 const CancelToken = axios.CancelToken
 let cancel
