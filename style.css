@@ -367,7 +367,7 @@ footer {
     margin-left: -24px;
 }
 .category-card {
-    margin-left: -40px;
+    margin-left: -60px !important;
 }
 .more-categories {
     margin-left: -30px;
